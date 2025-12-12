@@ -22,8 +22,6 @@ module.exports = {
     connection: {
     connectionString: DATABASE_URL,
     ssl: { rejectUnauthorized: false },
-    host: new URL(DATABASE_URL).hostname,
-    family: 4,  //
     },
     pool: { min: 0, max: 5 },
     migrations: {
